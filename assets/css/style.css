@@ -327,9 +327,16 @@ button.btn {
     display: flex;
     justify-content: space-between;
     padding-bottom: 13.02vw;
+    flex-wrap: wrap;
 }
+
 .column-img > div{
     position: relative;
+}
+
+.column-img > div:nth-of-type(2){
+    align-self: end;
+    padding-bottom: var(--space-out);
 }
 
 .img-wrapper {
@@ -339,7 +346,6 @@ button.btn {
 
 .container-work div.column-img:nth-of-type(2) {
     flex-direction: row-reverse;
-    padding-bottom: 7.29vw;
 }
 
 .work-img-wrapper {
@@ -431,19 +437,23 @@ button.btn {
     position: absolute;
     transition: all 1s;
 }
+
 [class|="img-wrapper"] img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 1s;
 }
+
 .img-wrapper-small{
     top: 0;
     right: 0;
     width: 11.45vw;
     height: 14.84vw;
     transition: all 1s;
+    margin-bottom: 5vh;
 }
+
 .img-wrapper-large {
     bottom: 0;
     left: 0;
@@ -643,6 +653,8 @@ footer form {
 }
 
 
-@media only screen {
-    
-}
+/*@media only screen and (max-width: 1200px) {
+    * {
+        background-color: green;
+    }
+}*/
